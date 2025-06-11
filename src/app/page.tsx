@@ -8,7 +8,7 @@ import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { SocialProofSection } from '@/components/landing/SocialProofSection';
 import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { FaqSection } from '@/components/landing/FaqSection';
-import { Footer } from '@/components/layout/Footer';
+// import { Footer } from '@/components/layout/Footer'; // Removido
 
 export default function HomePage() {
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
         <GuaranteeSection />
         <FaqSection />
       </main>
-      <Footer />
+      {/* <Footer /> */} {/* Removido */}
     </>
   );
 }
