@@ -7,7 +7,7 @@ import { BadgePercentIcon, ZapIcon, CheckCircle2Icon } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center py-16 pt-24 md:pt-20 text-center text-white overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center py-10 pt-16 md:pt-12 text-center text-white overflow-hidden">
       <Image
         src="https://placehold.co/1920x1080/1A1A1A/333333.png"
         alt="Background Tecnológico Abstrato"
