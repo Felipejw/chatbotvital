@@ -1,4 +1,6 @@
+
 import Image from 'next/image';
+import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { BadgePercentIcon, ZapIcon, CheckCircle2Icon } from 'lucide-react';
@@ -33,10 +35,10 @@ export function HeroSection() {
           <div className="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-primary" title="Iframe da vsl">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/EngW7tLk6R8?autoplay=0&modestbranding=1&rel=0&showinfo=0"
-              title="Vídeo de Vendas ChatVital"
+              src="https://player.vimeo.com/video/1082156397?h=7b0e9aa4e5&badge=0&autopause=0&player_id=0&app_id=58479"
+              title="APRESENTACÃO - CHATBOT"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               allowFullScreen
             ></iframe>
           </div>
@@ -54,6 +56,7 @@ export function HeroSection() {
           Comprar Agora por R$49
         </Button>
       </div>
+      <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
     </section>
   );
 }
