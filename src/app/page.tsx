@@ -1,4 +1,4 @@
-import { Header } from '@/components/layout/Header';
+// import { Header } from '@/components/layout/Header'; // Removido conforme solicitado
 import { HeroSection } from '@/components/landing/HeroSection';
 // import { VslSection } from '@/components/landing/VslSection'; // VSL agora está na HeroSection
 import { BenefitsSection } from '@/components/landing/BenefitsSection';
@@ -9,7 +9,7 @@ import { Footer } from '@/components/layout/Footer';
 export default function HomePage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */} {/* Removido conforme solicitado */}
       <main>
         <HeroSection />
         {/* <VslSection /> */} {/* Movido para dentro da HeroSection */}
