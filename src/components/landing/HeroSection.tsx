@@ -29,9 +29,6 @@ export function HeroSection() {
         </p>
 
         {/* VSL Content Integrated Here */}
-        <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 mt-10 md:mt-12">
-          Assista e descubra como nosso Chatbot está ajudando empresas a vender <span className="text-primary">todos os dias!</span>
-        </h2>
         <div className="max-w-3xl w-full mx-auto mb-8">
           <div className="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-primary">
             <iframe
