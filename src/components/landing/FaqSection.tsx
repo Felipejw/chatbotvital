@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: 'Preciso pagar mais depois?',
-    answer: 'Não. A nossa oferta especial de R$97 garante acesso vitalício à plataforma, sem nenhuma mensalidade ou taxa adicional futura.',
+    answer: 'Não. A nossa oferta especial de R$49 garante acesso vitalício à plataforma, sem nenhuma mensalidade ou taxa adicional futura.',
   },
 ];
 

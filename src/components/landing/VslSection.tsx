@@ -23,7 +23,7 @@ export function VslSection() {
         </div>
         <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105 mb-6">
           <PlayCircleIcon className="h-6 w-6 mr-2" />
-          Quero acesso vitalício agora por R$97
+          Comprar Agora por R$49
         </Button>
         <div className="flex justify-center">
           <Badge variant="secondary" className="py-2 px-4 text-md font-medium bg-accent/20 border-accent text-accent-foreground">
