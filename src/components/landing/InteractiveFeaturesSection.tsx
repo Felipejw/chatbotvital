@@ -1,11 +1,10 @@
+
 "use client";
 
 import { useState } from 'react';
 import Image from 'next/image';
 import {
-  LayoutDashboard, BookOpenText, ClipboardList, DraftingCompass, BotMessageSquare,
-  UserCheck, ShieldCheck, Users, Store, StickyNote,
-  DownloadCloud, Users2, BrainCircuit, PlusCircle, Kanban, CalendarClock, Zap, Bot, LayoutPanelLeft
+  MessageSquare, LayoutDashboard, Workflow, Contacts, CalendarClock, Zap, Tags, PlusCircle, UserPlus, Puzzle, Code2, Settings, SendHorizonal
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -24,84 +23,121 @@ interface PlatformFeature {
 
 const platformFeaturesData: PlatformFeature[] = [
   {
+    id: 'atendimento',
+    title: 'Atendimento',
+    icon: MessageSquare,
+    longDescription: 'Centralize e gerencie todas as suas conversas de atendimento em um único lugar. Organize, responda e acompanhe o histórico de interações com seus clientes de forma eficiente.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Atendimento',
+    aiHint: 'customer support chat'
+  },
+  {
     id: 'dashboard',
     title: 'Dashboard',
     icon: LayoutDashboard,
-    longDescription: 'Acompanhe sua performance e métricas chave em um painel de controle intuitivo. Visualize seus resultados, saldo, e progresso de forma clara e objetiva para tomar decisões mais informadas.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-dashboard-scaled.png',
-    imageAlt: 'Demonstração do Dashboard da plataforma Tubarões da Bolsa',
+    longDescription: 'Visualize as principais métricas do seu chatbot e atendimento. Acompanhe o desempenho, volume de mensagens, e outras estatísticas importantes para tomar decisões estratégicas.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Dashboard',
+    aiHint: 'analytics dashboard'
   },
   {
-    id: 'trade-journal',
-    title: 'Diário de Trades',
-    icon: BookOpenText,
-    longDescription: 'Registre todas as suas operações detalhadamente. Analise seus acertos e erros, identifique padrões e refine suas estratégias para uma melhoria contínua. O diário é essencial para o desenvolvimento de um trader consistente.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-diariotrader-scaled.png',
-    imageAlt: 'Interface do Diário de Trades',
-    aiHint: 'trading journal'
+    id: 'chatbot-funil',
+    title: 'Chatbot Funil',
+    icon: Workflow,
+    longDescription: 'Crie fluxos de conversa automatizados e funis de vendas inteligentes. Guie seus clientes por jornadas personalizadas, qualifique leads e aumente suas conversões com nosso construtor de funis.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Chatbot Funil',
+    aiHint: 'chatbot funnel builder'
   },
   {
-    id: 'daily-plan',
-    title: 'Plano Diário',
-    icon: ClipboardList,
-    longDescription: 'Defina suas metas, estratégias e limites para cada dia de operação. O plano diário ajuda a manter o foco, a disciplina e a evitar decisões impulsivas, seguindo um roteiro pré-estabelecido.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-planodiario-scaled.png',
-    imageAlt: 'Funcionalidade de Plano Diário',
-    aiHint: 'daily planner'
+    id: 'contatos',
+    title: 'Contatos',
+    icon: Contacts,
+    longDescription: 'Gerencie sua base de contatos de forma organizada. Importe, exporte, segmente e adicione informações relevantes aos perfis dos seus clientes para um atendimento mais personalizado.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Contatos',
+    aiHint: 'contact management crm'
   },
   {
-    id: 'strategy-builder',
-    title: 'Construtor de Estratégias',
-    icon: DraftingCompass,
-    longDescription: 'Crie, teste e otimize suas próprias estratégias de trading. Utilize ferramentas visuais e backtesting para validar suas ideias antes de aplicá-las no mercado real, aumentando suas chances de sucesso.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-construtordeestrategia-scaled.png',
-    imageAlt: 'Demonstração do Construtor de Estratégias',
-    aiHint: 'strategy builder'
+    id: 'agendamento-mensagens',
+    title: 'Agendamento de Mensagens',
+    icon: CalendarClock,
+    longDescription: 'Programe o envio de mensagens automáticas para datas e horários específicos. Ideal para lembretes, follow-ups, campanhas sazonais e manter o engajamento com seus clientes.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Agendamento de Mensagens',
+    aiHint: 'message scheduling calendar'
   },
   {
-    id: 'virtual-psychologist',
-    title: 'Psicólogo Virtual',
-    icon: BotMessageSquare,
-    longDescription: 'Receba suporte emocional e insights de uma IA treinada para ajudar traders. Gerencie o estresse, a ansiedade e outros fatores psicológicos que afetam suas decisões e sua performance no mercado.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-psicologovirtual-scaled.png',
-    imageAlt: 'Interface do Psicólogo Virtual',
-    aiHint: 'ai psychologist'
+    id: 'respostas-rapidas',
+    title: 'Respostas Rápidas',
+    icon: Zap,
+    longDescription: 'Crie e utilize modelos de mensagens prontas para agilizar o atendimento. Responda perguntas frequentes e envie informações importantes com apenas alguns cliques, economizando tempo.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Respostas Rápidas',
+    aiHint: 'quick replies chat'
   },
   {
-    id: 'profile-test',
-    title: 'Teste de Perfil',
-    icon: UserCheck,
-    longDescription: 'Descubra seu perfil de trader e entenda suas características comportamentais. Receba recomendações personalizadas para alinhar suas estratégias e seu operacional ao seu perfil, maximizando seus pontos fortes.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-testedeperfil-scaled.png',
-    imageAlt: 'Funcionalidade de Teste de Perfil',
-    aiHint: 'profile assessment'
+    id: 'tag',
+    title: 'Tag',
+    icon: Tags,
+    longDescription: 'Categorize e organize seus contatos e conversas utilizando tags personalizadas. Facilite a segmentação, a busca por informações e o acompanhamento de diferentes tipos de interações.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Tag',
+    aiHint: 'tagging system organization'
   },
   {
-    id: 'risk-manager',
-    title: 'Gestor de Risco',
-    icon: ShieldCheck,
-    longDescription: 'Defina e controle seus limites de perda, metas de ganho e tamanho de posição. O gestor de risco é fundamental para proteger seu capital e garantir a longevidade nas suas operações no mercado.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-gestorderisco-scaled.png',
-    imageAlt: 'Opção de Gestor de Risco',
-    aiHint: 'risk management'
+    id: 'adicionar-whatsapp',
+    title: 'Adicionar WhatsApp',
+    icon: PlusCircle,
+    longDescription: 'Conecte múltiplos números de WhatsApp à plataforma de forma simples e rápida. Gerencie diversas contas e canais de atendimento em um só lugar.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Adicionar WhatsApp',
+    aiHint: 'whatsapp integration setup'
   },
   {
-    id: 'traders-group',
-    title: 'Grupo de Traders',
-    icon: Users,
-    longDescription: 'Conecte-se com outros traders, compartilhe experiências, estratégias e aprendizados. Participe de discussões, tire dúvidas e faça parte de uma comunidade engajada e focada em resultados.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-grupotrader-scaled.png',
-    imageAlt: 'Comunidade Grupo de Traders',
-    aiHint: 'community forum'
+    id: 'adicionar-atendentes',
+    title: 'Adicionar Atendentes',
+    icon: UserPlus,
+    longDescription: 'Inclua membros da sua equipe na plataforma para colaborar no atendimento. Defina permissões, distribua conversas e trabalhe em conjunto para oferecer o melhor suporte.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Adicionar Atendentes',
+    aiHint: 'team members users'
   },
   {
-    id: 'trader-store',
-    title: 'Loja do Trader',
-    icon: Store,
-    longDescription: 'Acesse uma seleção de produtos digitais como e-books, indicadores, cursos e estratégias prontas. Encontre ferramentas e conhecimento para aprimorar ainda mais suas habilidades e resultados no trading.',
-    imageSrc: 'https://checkout.tubaroesdabolsa.com/wp-content/uploads/2025/06/cap-loja-scaled.png',
-    imageAlt: 'Loja do Trader com Produtos Digitais',
-    aiHint: 'online store'
+    id: 'integracoes',
+    title: 'Integrações',
+    icon: Puzzle,
+    longDescription: 'Conecte seu chatbot com outras ferramentas e sistemas que você já utiliza. Amplie as funcionalidades e automatize processos integrando com CRMs, plataformas de e-commerce e mais.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Integrações',
+    aiHint: 'api integrations plugins'
+  },
+  {
+    id: 'api',
+    title: 'API',
+    icon: Code2,
+    longDescription: 'Acesse nossa API para desenvolvedores e crie integrações personalizadas. Tenha flexibilidade para conectar o chatbot com seus sistemas e construir soluções sob medida para suas necessidades.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de API',
+    aiHint: 'developer api code'
+  },
+  {
+    id: 'configuracoes',
+    title: 'Configurações',
+    icon: Settings,
+    longDescription: 'Personalize as configurações gerais da sua conta e do chatbot. Ajuste preferências de notificação, horários de atendimento, informações da empresa e muito mais.',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Configurações',
+    aiHint: 'app settings configuration'
+  },
+  {
+    id: 'envio-em-massa',
+    title: 'Envio em Massa',
+    icon: SendHorizonal,
+    longDescription: 'Realize envios de mensagens em massa para seus contatos segmentados. Ideal para campanhas de marketing, comunicados importantes e divulgação de novidades (respeitando as políticas do WhatsApp).',
+    imageSrc: 'https://placehold.co/800x450.png',
+    imageAlt: 'Demonstração da funcionalidade de Envio em Massa',
+    aiHint: 'bulk messaging campaign'
   }
 ];
 
@@ -162,9 +198,8 @@ export function InteractiveFeaturesSection() {
                     src={selectedFeature.imageSrc}
                     alt={selectedFeature.imageAlt}
                     fill
-                    className="object-contain p-2" 
+                    className="object-contain p-2"
                     data-ai-hint={selectedFeature.aiHint}
-                    unoptimized={selectedFeature.imageSrc.includes('drive.google.com') || selectedFeature.imageSrc.includes('checkout.tubaroesdabolsa.com')}
                   />
                 </div>
               </CardContent>
@@ -175,5 +210,3 @@ export function InteractiveFeaturesSection() {
     </section>
   );
 }
-
-    
