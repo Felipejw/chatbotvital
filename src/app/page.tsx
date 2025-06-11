@@ -4,6 +4,7 @@ import { HeroSection } from '@/components/landing/HeroSection';
 // import { VslSection } from '@/components/landing/VslSection'; // VSL agora está na HeroSection
 import { BenefitsSection } from '@/components/landing/BenefitsSection';
 import { InteractiveFeaturesSection } from '@/components/landing/InteractiveFeaturesSection';
+import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
 import { SocialProofSection } from '@/components/landing/SocialProofSection';
 import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { FaqSection } from '@/components/landing/FaqSection';
@@ -18,6 +19,7 @@ export default function HomePage() {
         {/* <VslSection /> */} {/* Movido para dentro da HeroSection */}
         <BenefitsSection />
         <InteractiveFeaturesSection />
+        <TestimonialsSection />
         <SocialProofSection />
         <GuaranteeSection />
         <FaqSection />
@@ -26,5 +28,3 @@ export default function HomePage() {
     </>
   );
 }
-
-    
