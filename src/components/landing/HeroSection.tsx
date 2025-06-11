@@ -30,7 +30,7 @@ export function HeroSection() {
 
         {/* VSL Content Integrated Here */}
         <div className="max-w-3xl w-full mx-auto mb-8">
-          <div className="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-primary">
+          <div className="aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-primary" title="Iframe da vsl">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/EngW7tLk6R8?autoplay=0&modestbranding=1&rel=0&showinfo=0"
