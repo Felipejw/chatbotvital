@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import {
-  MessageSquare, LayoutDashboard, Workflow, Contacts, CalendarClock, Zap, Tags, PlusCircle, UserPlus, Puzzle, Code2, Settings, SendHorizonal
+  MessageSquare, LayoutDashboard, Workflow, Contact, CalendarClock, Zap, Tags, PlusCircle, UserPlus, Puzzle, Code2, Settings, SendHorizonal
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -52,7 +52,7 @@ const platformFeaturesData: PlatformFeature[] = [
   {
     id: 'contatos',
     title: 'Contatos',
-    icon: Contacts,
+    icon: Contact, // Corrigido de Contacts para Contact
     longDescription: 'Gerencie sua base de contatos de forma organizada. Importe, exporte, segmente e adicione informações relevantes aos perfis dos seus clientes para um atendimento mais personalizado.',
     imageSrc: 'https://placehold.co/800x450.png',
     imageAlt: 'Demonstração da funcionalidade de Contatos',

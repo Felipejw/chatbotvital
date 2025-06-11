@@ -11,11 +11,11 @@ export function HeroSection() {
       <Image
         src="https://placehold.co/1920x1080/1A1A1A/333333.png"
         alt="Background Tecnológico Abstrato"
-        layout="fill"
-        objectFit="cover"
+        fill
         quality={80}
-        className="-z-10"
+        className="-z-10 object-cover"
         data-ai-hint="dark technology"
+        priority // Added priority for LCP image
       />
       <div className="absolute inset-0 bg-black/70 -z-10" />
       <div className="container mx-auto px-4 z-10 flex flex-col items-center">
