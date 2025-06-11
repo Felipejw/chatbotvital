@@ -1,5 +1,7 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BadgeDollarSignIcon, CalendarClockIcon, DicesIcon, MessageSquareIcon, BookOpenTextIcon, CheckBadgeIcon, ShieldCheckIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { BadgeDollarSignIcon, BotIcon, DicesIcon, MessageSquareIcon, BookOpenTextIcon, ShieldCheckIcon, ZapIcon } from 'lucide-react';
 
 const benefits = [
   {
@@ -8,9 +10,9 @@ const benefits = [
     description: 'Pague uma única vez e tenha acesso vitalício ao chatbot.',
   },
   {
-    icon: <CalendarClockIcon className="h-10 w-10 text-primary mb-4" />,
-    title: 'Teste Grátis por 3 Dias',
-    description: 'Experimente todas as funcionalidades antes de decidir.',
+    icon: <BotIcon className="h-10 w-10 text-primary mb-4" />,
+    title: 'Chatbot com IA',
+    description: 'Inteligência Artificial para respostas mais inteligentes e personalizadas.',
   },
   {
     icon: <DicesIcon className="h-10 w-10 text-primary mb-4" />,
@@ -30,7 +32,7 @@ const benefits = [
   {
     icon: <ShieldCheckIcon className="h-10 w-10 text-primary mb-4" />,
     title: 'Funciona em Tudo',
-    description: 'Compatível com iOS, Android e Windows.',
+    description: 'Compatível com iOS, Android, Windows e Mac.',
   },
 ];
 
@@ -53,6 +55,12 @@ export function BenefitsSection() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="mt-16 text-center">
+          <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
+            <ZapIcon className="h-6 w-6 mr-2" />
+            Comprar Agora por R$49
+          </Button>
         </div>
       </div>
     </section>
