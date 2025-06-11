@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/landing/HeroSection';
 // import { VslSection } from '@/components/landing/VslSection'; // VSL agora está na HeroSection
 import { BenefitsSection } from '@/components/landing/BenefitsSection';
 import { SocialProofSection } from '@/components/landing/SocialProofSection';
+import { GuaranteeSection } from '@/components/landing/GuaranteeSection';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { Footer } from '@/components/layout/Footer';
 
@@ -15,6 +16,7 @@ export default function HomePage() {
         {/* <VslSection /> */} {/* Movido para dentro da HeroSection */}
         <BenefitsSection />
         <SocialProofSection />
+        <GuaranteeSection />
         <FaqSection />
       </main>
       <Footer />
