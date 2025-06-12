@@ -60,8 +60,8 @@ export function SocialProofSection() {
                   R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
                 </span>
               </div>
-              <Button size="lg" className="mt-8 text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105" asChild>
-                <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer" className="font-bold">
+              <Button size="lg" className="mt-8 text-xl px-12 py-7 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105 font-bold" asChild>
+                <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
                   <ShoppingCartIcon className="h-6 w-6 mr-2" />
                   Comprar Agora por R$49
                 </Link>
