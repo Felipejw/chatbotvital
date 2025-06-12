@@ -8,17 +8,8 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center py-10 pt-16 md:pt-12 text-center text-white overflow-hidden">
-      <Image
-        src="https://placehold.co/1920x1080/1A1A1A/333333.png"
-        alt="Background Tecnológico Abstrato"
-        fill
-        quality={80}
-        className="object-cover -z-10"
-        data-ai-hint="dark technology"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/70 -z-10" />
+    <section className="bg-neutral-900 min-h-screen flex flex-col items-center justify-center py-10 pt-16 md:pt-12 text-center text-white overflow-hidden">
+      {/* Background Image and overlay div removed */}
       <div className="container mx-auto px-4 z-10 flex flex-col items-center">
         <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 mt-8 sm:mt-0">
           O Chatbot mais barato do Brasil com <span className="text-primary">acesso vitalício</span> por apenas <span className="text-primary">R$49!</span>
