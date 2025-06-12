@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { VerifiedIcon, UsersIcon, ZapIcon } from 'lucide-react';
+import { VerifiedIcon, UsersIcon, ShoppingCartIcon } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
 
 const features = [
@@ -55,12 +55,12 @@ export function SocialProofSection() {
                 <span className="text-2xl text-muted-foreground line-through">De R$99,00</span>
               </div>
               <div>
-                <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary">
+                <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary drop-shadow-lg">
                   R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
                 </span>
               </div>
               <Button size="lg" className="mt-8 text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
-                <ZapIcon className="h-6 w-6 mr-2" />
+                <ShoppingCartIcon className="h-6 w-6 mr-2" />
                 Comprar Agora por R$49
               </Button>
             </div>
