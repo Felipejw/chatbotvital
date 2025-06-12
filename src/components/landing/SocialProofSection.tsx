@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { VerifiedIcon, UsersIcon, ZapIcon, ArrowRightIcon } from 'lucide-react';
+import { VerifiedIcon, UsersIcon, ZapIcon } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
 
 const features = [
@@ -34,12 +34,12 @@ export function SocialProofSection() {
 
         {/* Features and Pricing Section */}
         <div className="max-w-2xl mx-auto mb-12">
-          <div className="bg-card p-6 sm:p-8 rounded-lg shadow-lg border">
+          <div className="bg-card p-6 sm:p-8 rounded-lg shadow-lg border text-center">
             <CountdownTimer initialHours={0} initialMinutes={4} initialSeconds={0} />
-            <ul className="space-y-3 text-left mb-8 mt-6"> {/* Added mt-6 for spacing after timer */}
+            <ul className="space-y-3 text-left mb-8 mt-6 text-card-foreground">
               {features.map((feature, index) => (
-                <li key={index} className="flex items-center text-lg text-card-foreground">
-                  <ArrowRightIcon className="h-5 w-5 text-primary mr-3 shrink-0" />
+                <li key={index} className="flex items-center text-lg">
+                  <span className="mr-3 shrink-0 text-primary">✅</span>
                   {feature}
                 </li>
               ))}
@@ -59,17 +59,16 @@ export function SocialProofSection() {
                   R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
                 </span>
               </div>
+              <Button size="lg" className="mt-8 text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <ZapIcon className="h-6 w-6 mr-2" />
+                Comprar Agora por R$49
+              </Button>
             </div>
           </div>
         </div>
         {/* End of Features and Pricing Section */}
         
-        <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
-          <ZapIcon className="h-6 w-6 mr-2" />
-          Comprar Agora por R$49
-        </Button>
       </div>
     </section>
   );
 }
-

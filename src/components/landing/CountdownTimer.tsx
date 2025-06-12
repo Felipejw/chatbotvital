@@ -48,14 +48,14 @@ export function CountdownTimer({ initialHours = 1, initialMinutes = 59, initialS
   const formatTime = (time: number) => String(time).padStart(2, '0');
 
   return (
-    <div className="flex flex-col items-center my-8 p-6 bg-destructive/10 border border-destructive rounded-lg shadow-md max-w-md mx-auto">
+    <div className="flex flex-col items-center p-4 md:p-6 bg-destructive/10 border border-destructive rounded-lg shadow-md w-full">
       <div className="flex items-center text-destructive mb-3">
-        <TimerIcon className="h-8 w-8 mr-3" />
-        <p className="font-headline text-xl md:text-2xl font-semibold">
+        <TimerIcon className="h-7 w-7 md:h-8 md:w-8 mr-2 md:mr-3" />
+        <p className="font-headline text-lg md:text-xl font-semibold text-center">
           Oferta disponível somente hoje!
         </p>
       </div>
-      <div className="font-mono text-4xl md:text-5xl font-bold text-destructive tracking-wider">
+      <div className="font-mono text-3xl md:text-4xl font-bold text-destructive tracking-wider">
         <span>{formatTime(timeLeft.hours)}</span>:
         <span>{formatTime(timeLeft.minutes)}</span>:
         <span>{formatTime(timeLeft.seconds)}</span>
