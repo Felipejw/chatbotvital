@@ -35,7 +35,8 @@ export function SocialProofSection() {
         {/* Features and Pricing Section */}
         <div className="max-w-2xl mx-auto mb-12">
           <div className="bg-card p-6 sm:p-8 rounded-lg shadow-lg border">
-            <ul className="space-y-3 text-left mb-8">
+            <CountdownTimer initialHours={0} initialMinutes={4} initialSeconds={0} />
+            <ul className="space-y-3 text-left mb-8 mt-6"> {/* Added mt-6 for spacing after timer */}
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center text-lg text-card-foreground">
                   <ArrowRightIcon className="h-5 w-5 text-primary mr-3 shrink-0" />
@@ -50,8 +51,10 @@ export function SocialProofSection() {
               <p className="font-body text-md text-muted-foreground mb-4">
                 De <span className="line-through">R$99</span> você vai investir somente...
               </p>
-              <div> {/* Removed mb-8 from here, box padding and parent margin will handle spacing */}
-                <span className="text-2xl text-muted-foreground line-through mr-2">De R$99,00</span>
+              <div className="mb-1">
+                <span className="text-2xl text-muted-foreground line-through">De R$99,00</span>
+              </div>
+              <div>
                 <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary">
                   R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
                 </span>
@@ -61,8 +64,6 @@ export function SocialProofSection() {
         </div>
         {/* End of Features and Pricing Section */}
         
-        <CountdownTimer initialHours={0} initialMinutes={4} initialSeconds={0} />
-
         <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
           <ZapIcon className="h-6 w-6 mr-2" />
           Comprar Agora por R$49
@@ -71,3 +72,4 @@ export function SocialProofSection() {
     </section>
   );
 }
+
