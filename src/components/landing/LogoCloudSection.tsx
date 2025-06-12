@@ -16,7 +16,7 @@ const logos = [
 
 export function LogoCloudSection() {
   return (
-    <section className="py-8 md:py-12 bg-background">
+    <section className="py-6 md:py-10 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-center font-headline text-2xl sm:text-3xl text-foreground mb-10">
           Empresas que confiam em nossa solução
@@ -45,3 +45,4 @@ export function LogoCloudSection() {
     </section>
   );
 }
+
