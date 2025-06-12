@@ -18,7 +18,7 @@ const features = [
 
 export function SocialProofSection() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 text-center">
         <div className="flex justify-center items-center mb-6">
           <UsersIcon className="h-12 w-12 text-primary mr-3" />
