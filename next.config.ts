@@ -34,6 +34,12 @@ const nextConfig: NextConfig = {
         hostname: 'chatguru.com.br',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
