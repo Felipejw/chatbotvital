@@ -55,7 +55,7 @@ export function CountdownTimer({ initialHours = 1, initialMinutes = 59, initialS
           Oferta disponível somente hoje!
         </p>
       </div>
-      <div className="font-mono text-3xl md:text-4xl font-bold text-destructive tracking-wider">
+      <div className="font-mono text-4xl md:text-5xl font-bold text-destructive tracking-wider drop-shadow-md">
         <span>{formatTime(timeLeft.hours)}</span>:
         <span>{formatTime(timeLeft.minutes)}</span>:
         <span>{formatTime(timeLeft.seconds)}</span>
