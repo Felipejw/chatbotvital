@@ -9,10 +9,11 @@ const iconSet = {
 
 export function IconMarqueeSection() {
   return (
-    <section className="py-8 md:py-12 bg-background"> {/* Usando bg-background para alternar com a seção anterior (bg-gray-50) */}
+    <section className="py-10 md:py-16 bg-background"> {/* Usando bg-background para alternar com a seção anterior (bg-gray-50) */}
       <div className="container mx-auto px-4">
-        {/* Opcionalmente, um título poderia ser adicionado aqui se desejado no futuro */}
-        {/* Ex: <h2 className="text-center font-headline text-2xl sm:text-3xl text-foreground mb-10">Plataformas que se Integram Conosco</h2> */}
+        <h2 className="text-center font-headline text-2xl sm:text-3xl text-foreground mb-10">
+          Plataformas que se Integram Conosco
+        </h2>
         <div className="relative w-full overflow-hidden group">
           <div className="flex animate-marquee group-hover:animate-pause whitespace-nowrap">
             {/* Duplicating the icon for continuous marquee effect */}
@@ -20,9 +21,9 @@ export function IconMarqueeSection() {
               <Image
                 src={iconSet.src}
                 alt={iconSet.alt}
-                width={1000} 
-                height={60}  
-                className="object-contain max-h-16" 
+                width={1000}
+                height={60}
+                className="object-contain max-h-16"
                 data-ai-hint={iconSet.hint}
                 unoptimized // Good for SVGs
               />
