@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
 import Script from 'next/script'; // Importar o componente Script
+import { FloatingWhatsAppButton } from '@/components/common/FloatingWhatsAppButton';
 
 export const metadata: Metadata = {
   title: 'ChatVital - Seu Chatbot com Acesso Vitalício',
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
+        <FloatingWhatsAppButton />
       </body>
     </html>
   );
