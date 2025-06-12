@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { BadgePercentIcon, CheckCircle2Icon, ShoppingCartIcon } from 'lucide-react'; // Alterado ZapIcon para ShoppingCartIcon
+import { BadgePercentIcon, CheckCircle2Icon, ShoppingCartIcon } from 'lucide-react';
+import Link from 'next/link';
 
 export function HeroSection() {
   return (
@@ -51,9 +52,11 @@ export function HeroSection() {
         </div>
         {/* End of VSL Content */}
 
-        <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
-          <ShoppingCartIcon className="h-6 w-6 mr-2" /> {/* Ícone alterado */}
-          Comprar Agora por R$49
+        <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105" asChild>
+          <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
+            <ShoppingCartIcon className="h-6 w-6 mr-2" />
+            Comprar Agora por R$49
+          </Link>
         </Button>
       </div>
       <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
