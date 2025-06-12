@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         hostname: 'seguro.chatbotvital.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'chatguru.com.br',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
