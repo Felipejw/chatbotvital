@@ -4,7 +4,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { HelpCircleIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { HelpCircleIcon, ShoppingCartIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const faqs = [
   {
@@ -64,6 +66,14 @@ export function FaqSection() {
               </AccordionItem>
             ))}
           </Accordion>
+        </div>
+        <div className="mt-12 text-center">
+          <Button size="lg" className="text-xl px-12 py-7 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105 font-bold" asChild>
+            <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
+              <ShoppingCartIcon className="h-6 w-6 mr-2" />
+              Comprar Agora por R$49
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
