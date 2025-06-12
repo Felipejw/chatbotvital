@@ -2,8 +2,7 @@
 import Link from 'next/link';
 
 export function FloatingWhatsAppButton() {
-  const phoneNumber = "551198862843"; // Número de telefone do WhatsApp
-  const whatsappLink = `https://wa.me/${phoneNumber}`;
+  const whatsappLink = "https://wa.me/5511988865214?text=Ol%C3%A1%2C%20gostaria%20de%20ajuda%20para%20comprar%20o%20Chatbot!";
 
   return (
     <Link
