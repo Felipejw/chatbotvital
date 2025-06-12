@@ -27,7 +27,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Atendimento',
     icon: MessageSquare,
     longDescription: 'Centralize e gerencie todas as suas conversas de atendimento em um único lugar. Organize, responda e acompanhe o histórico de interações com seus clientes de forma eficiente.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/ATENDIMENTO.png',
     imageAlt: 'Demonstração da funcionalidade de Atendimento',
     aiHint: 'customer support chat'
   },
@@ -36,7 +36,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Dashboard',
     icon: LayoutDashboard,
     longDescription: 'Visualize as principais métricas do seu chatbot e atendimento. Acompanhe o desempenho, volume de mensagens, e outras estatísticas importantes para tomar decisões estratégicas.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/DASHBOARD-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Dashboard',
     aiHint: 'analytics dashboard'
   },
@@ -45,7 +45,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Chatbot Funil',
     icon: Workflow,
     longDescription: 'Crie fluxos de conversa automatizados e funis de vendas inteligentes. Guie seus clientes por jornadas personalizadas, qualifique leads e aumente suas conversões com nosso construtor de funis.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/FUNIL-DE-CHATBOT-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Chatbot Funil',
     aiHint: 'chatbot funnel builder'
   },
@@ -54,7 +54,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Contatos',
     icon: Contact, // Corrigido de Contacts para Contact
     longDescription: 'Gerencie sua base de contatos de forma organizada. Importe, exporte, segmente e adicione informações relevantes aos perfis dos seus clientes para um atendimento mais personalizado.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/CONTATOS-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Contatos',
     aiHint: 'contact management crm'
   },
@@ -72,7 +72,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Respostas Rápidas',
     icon: Zap,
     longDescription: 'Crie e utilize modelos de mensagens prontas para agilizar o atendimento. Responda perguntas frequentes e envie informações importantes com apenas alguns cliques, economizando tempo.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/RESPOSTA-RAPIDA-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Respostas Rápidas',
     aiHint: 'quick replies chat'
   },
@@ -81,7 +81,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Tag',
     icon: Tags,
     longDescription: 'Categorize e organize seus contatos e conversas utilizando tags personalizadas. Facilite a segmentação, a busca por informações e o acompanhamento de diferentes tipos de interações.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/TAG-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Tag',
     aiHint: 'tagging system organization'
   },
@@ -90,7 +90,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Adicionar WhatsApp',
     icon: PlusCircle,
     longDescription: 'Conecte múltiplos números de WhatsApp à plataforma de forma simples e rápida. Gerencie diversas contas e canais de atendimento em um só lugar.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/ADC-WHATSAPP-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Adicionar WhatsApp',
     aiHint: 'whatsapp integration setup'
   },
@@ -99,7 +99,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Adicionar Atendentes',
     icon: UserPlus,
     longDescription: 'Inclua membros da sua equipe na plataforma para colaborar no atendimento. Defina permissões, distribua conversas e trabalhe em conjunto para oferecer o melhor suporte.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/ADICIONAR-USUARIOS-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Adicionar Atendentes',
     aiHint: 'team members users'
   },
@@ -108,7 +108,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Integrações',
     icon: Puzzle,
     longDescription: 'Conecte seu chatbot com outras ferramentas e sistemas que você já utiliza. Amplie as funcionalidades e automatize processos integrando com CRMs, plataformas de e-commerce e mais.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/INTEGRACOES-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Integrações',
     aiHint: 'api integrations plugins'
   },
@@ -117,7 +117,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'API',
     icon: Code2,
     longDescription: 'Acesse nossa API para desenvolvedores e crie integrações personalizadas. Tenha flexibilidade para conectar o chatbot com seus sistemas e construir soluções sob medida para suas necessidades.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/API-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de API',
     aiHint: 'developer api code'
   },
@@ -126,7 +126,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Configurações',
     icon: Settings,
     longDescription: 'Personalize as configurações gerais da sua conta e do chatbot. Ajuste preferências de notificação, horários de atendimento, informações da empresa e muito mais.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/CONFIGURACAO-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Configurações',
     aiHint: 'app settings configuration'
   },

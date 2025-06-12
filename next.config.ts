@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         hostname: 'checkout.tubaroesdabolsa.com',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'seguro.chatbotvital.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
