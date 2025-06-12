@@ -4,12 +4,13 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import {
-  MessageSquare, LayoutDashboard, Workflow, Contact, CalendarClock, Zap, Tags, PlusCircle, UserPlus, Puzzle, Code2, Settings, SendHorizonal
+  MessageSquare, LayoutDashboard, Workflow, Contact, CalendarClock, Zap, Tags, PlusCircle, UserPlus, Puzzle, Code2, Settings, SendHorizonal, ShoppingCartIcon
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 interface PlatformFeature {
   id: string;
@@ -205,6 +206,14 @@ export function InteractiveFeaturesSection() {
               </CardContent>
             </Card>
           </div>
+        </div>
+        <div className="mt-12 md:mt-16 text-center">
+          <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105" asChild>
+            <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
+              <ShoppingCartIcon className="h-6 w-6 mr-2" />
+              Comprar Agora por R$49
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
