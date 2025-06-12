@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <section className="bg-neutral-900 min-h-screen flex flex-col items-center justify-center py-10 pt-16 md:pt-12 text-center text-white overflow-hidden">
+    <section className="bg-neutral-900 min-h-screen flex flex-col items-center justify-center py-10 md:pt-12 text-center text-white overflow-hidden">
       {/* Background Image and overlay div removed */}
       <div className="container mx-auto px-4 z-10 flex flex-col items-center">
         <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 mt-8 sm:mt-0">
