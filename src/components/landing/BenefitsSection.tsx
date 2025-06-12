@@ -39,7 +39,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-10 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="font-headline text-3xl sm:text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
           Tudo que você precisa em um <span className="text-primary">único sistema</span>
