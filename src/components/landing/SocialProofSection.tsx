@@ -34,25 +34,29 @@ export function SocialProofSection() {
 
         {/* Features and Pricing Section */}
         <div className="max-w-2xl mx-auto mb-12">
-          <ul className="space-y-3 text-left mb-8">
-            {features.map((feature, index) => (
-              <li key={index} className="flex items-center text-lg text-foreground">
-                <ArrowRightIcon className="h-5 w-5 text-primary mr-3 shrink-0" />
-                {feature}
-              </li>
-            ))}
-          </ul>
-          <p className="font-body text-md text-muted-foreground mb-2">
-            Somente agora, você terá a chance de comprar o chatbot... Se você sair dessa página, o chatbot custará <span className="font-bold text-destructive">R$99,00</span>.
-          </p>
-          <p className="font-body text-md text-muted-foreground mb-4">
-            De <span className="line-through">R$99</span> você vai investir somente...
-          </p>
-          <div className="mb-8">
-            <span className="text-2xl text-muted-foreground line-through mr-2">De R$99,00</span>
-            <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary">
-              R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
-            </span>
+          <div className="bg-card p-6 sm:p-8 rounded-lg shadow-lg border">
+            <ul className="space-y-3 text-left mb-8">
+              {features.map((feature, index) => (
+                <li key={index} className="flex items-center text-lg text-card-foreground">
+                  <ArrowRightIcon className="h-5 w-5 text-primary mr-3 shrink-0" />
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <div className="text-center">
+              <p className="font-body text-md text-muted-foreground mb-2">
+                Somente agora, você terá a chance de comprar o chatbot... Se você sair dessa página, o chatbot custará <span className="font-bold text-destructive">R$99,00</span>.
+              </p>
+              <p className="font-body text-md text-muted-foreground mb-4">
+                De <span className="line-through">R$99</span> você vai investir somente...
+              </p>
+              <div> {/* Removed mb-8 from here, box padding and parent margin will handle spacing */}
+                <span className="text-2xl text-muted-foreground line-through mr-2">De R$99,00</span>
+                <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary">
+                  R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         {/* End of Features and Pricing Section */}
