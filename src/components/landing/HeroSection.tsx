@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle2Icon, ShoppingCartIcon } from 'lucide-react'; // Removido BadgePercentIcon
+import { CheckCircle2Icon, ShoppingCartIcon } from 'lucide-react';
 import Link from 'next/link';
 
 export function HeroSection() {
@@ -20,8 +20,7 @@ export function HeroSection() {
       />
       <div className="absolute inset-0 bg-black/70 -z-10" />
       <div className="container mx-auto px-4 z-10 flex flex-col items-center">
-        {/* Badge removido daqui */}
-        <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 mt-8 sm:mt-0"> {/* Adicionado mt-8 sm:mt-0 para compensar remoção do badge */}
+        <h1 className="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 mt-8 sm:mt-0">
           O Chatbot mais barato do Brasil com <span className="text-primary">acesso vitalício</span> por apenas <span className="text-primary">R$49!</span>
         </h1>
         <p className="font-body text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-gray-300">
