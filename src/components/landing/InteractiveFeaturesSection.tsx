@@ -53,7 +53,7 @@ const platformFeaturesData: PlatformFeature[] = [
   {
     id: 'contatos',
     title: 'Contatos',
-    icon: Contact, // Corrigido de Contacts para Contact
+    icon: Contact, 
     longDescription: 'Gerencie sua base de contatos de forma organizada. Importe, exporte, segmente e adicione informações relevantes aos perfis dos seus clientes para um atendimento mais personalizado.',
     imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/CONTATOS-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Contatos',
@@ -209,7 +209,7 @@ export function InteractiveFeaturesSection() {
         </div>
         <div className="mt-12 md:mt-16 text-center">
           <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105" asChild>
-            <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer" className="font-bold">
               <ShoppingCartIcon className="h-6 w-6 mr-2" />
               Comprar Agora por R$49
             </Link>

@@ -61,7 +61,7 @@ export function SocialProofSection() {
                 </span>
               </div>
               <Button size="lg" className="mt-8 text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105" asChild>
-                <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer">
+                <Link href="https://seguro.chatbotvital.com/checkouts/chatbotvital/" target="_blank" rel="noopener noreferrer" className="font-bold">
                   <ShoppingCartIcon className="h-6 w-6 mr-2" />
                   Comprar Agora por R$49
                 </Link>
