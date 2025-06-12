@@ -40,4 +40,13 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ['https://6000-firebase-studio-1749659974914.cluster-kc2r6y3mtba5mswcmol45orivs.cloudworkstations.dev'],
 };
 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+};
+
 export default nextConfig;
