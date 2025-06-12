@@ -150,7 +150,7 @@ export function InteractiveFeaturesSection() {
   return (
     <section
       id="interactive-features"
-      className="py-12 md:py-16 bg-secondary dark:bg-card border rounded-lg shadow-lg"
+      className="py-8 md:py-10 bg-secondary dark:bg-card border rounded-lg shadow-lg"
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-10 md:mb-12">
