@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BadgeDollarSignIcon, BotIcon, DicesIcon, MessageSquareIcon, BookOpenTextIcon, ShieldCheckIcon, ZapIcon } from 'lucide-react';
+import { BadgeDollarSignIcon, BotIcon, DicesIcon, MessageSquareIcon, BookOpenTextIcon, ShieldCheckIcon, ShoppingCartIcon } from 'lucide-react'; // Alterado ZapIcon para ShoppingCartIcon
 
 const benefits = [
   {
@@ -58,7 +58,7 @@ export function BenefitsSection() {
         </div>
         <div className="mt-16 text-center">
           <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
-            <ZapIcon className="h-6 w-6 mr-2" />
+            <ShoppingCartIcon className="h-6 w-6 mr-2" /> {/* Ícone alterado */}
             Comprar Agora por R$49
           </Button>
         </div>

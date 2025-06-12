@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { BadgePercentIcon, ZapIcon, CheckCircle2Icon } from 'lucide-react';
+import { BadgePercentIcon, CheckCircle2Icon, ShoppingCartIcon } from 'lucide-react'; // Alterado ZapIcon para ShoppingCartIcon
 
 export function HeroSection() {
   return (
@@ -13,9 +13,9 @@ export function HeroSection() {
         alt="Background Tecnológico Abstrato"
         fill
         quality={80}
-        className="-z-10 object-cover"
+        className="object-cover -z-10"
         data-ai-hint="dark technology"
-        priority // Added priority for LCP image
+        priority
       />
       <div className="absolute inset-0 bg-black/70 -z-10" />
       <div className="container mx-auto px-4 z-10 flex flex-col items-center">
@@ -52,7 +52,7 @@ export function HeroSection() {
         {/* End of VSL Content */}
 
         <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
-          <ZapIcon className="h-6 w-6 mr-2" />
+          <ShoppingCartIcon className="h-6 w-6 mr-2" /> {/* Ícone alterado */}
           Comprar Agora por R$49
         </Button>
       </div>
