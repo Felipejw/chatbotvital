@@ -63,7 +63,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Agendamento de Mensagens',
     icon: CalendarClock,
     longDescription: 'Programe o envio de mensagens automáticas para datas e horários específicos. Ideal para lembretes, follow-ups, campanhas sazonais e manter o engajamento com seus clientes.',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/AGENDAMENTO-DE-MENSAGEM-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Agendamento de Mensagens',
     aiHint: 'message scheduling calendar'
   },
@@ -135,7 +135,7 @@ const platformFeaturesData: PlatformFeature[] = [
     title: 'Envio em Massa',
     icon: SendHorizonal,
     longDescription: 'Realize envios de mensagens em massa para seus contatos segmentados. Ideal para campanhas de marketing, comunicados importantes e divulgação de novidades (respeitando as políticas do WhatsApp).',
-    imageSrc: 'https://placehold.co/800x450.png',
+    imageSrc: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/ENVIO-EM-MASSA-scaled.png',
     imageAlt: 'Demonstração da funcionalidade de Envio em Massa',
     aiHint: 'bulk messaging campaign'
   }

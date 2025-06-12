@@ -1,6 +1,19 @@
+
 import { Button } from '@/components/ui/button';
-import { VerifiedIcon, UsersIcon, ZapIcon } from 'lucide-react';
+import { VerifiedIcon, UsersIcon, ZapIcon, ArrowRightIcon } from 'lucide-react';
 import { CountdownTimer } from './CountdownTimer';
+
+const features = [
+  'Chatbot com I.A',
+  'Disparo em Massa',
+  '+100 Atendentes',
+  '+100 Números de WhatsApp',
+  'Agendamento de Mensagem',
+  'Dashboard de Atendimento',
+  'Chatbot Interno (Entre a Equipe)',
+  'Integração: Typebot - Dialogflow',
+  'Mensagem, Áudio e Documentos',
+];
 
 export function SocialProofSection() {
   return (
@@ -18,8 +31,33 @@ export function SocialProofSection() {
             Empreendedores de todo o Brasil estão economizando tempo e aumentando vendas com o nosso chatbot.
           </p>
         </div>
+
+        {/* Features and Pricing Section */}
+        <div className="max-w-2xl mx-auto mb-12">
+          <ul className="space-y-3 text-left mb-8">
+            {features.map((feature, index) => (
+              <li key={index} className="flex items-center text-lg text-foreground">
+                <ArrowRightIcon className="h-5 w-5 text-primary mr-3 shrink-0" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <p className="font-body text-md text-muted-foreground mb-2">
+            Somente agora, você terá a chance de comprar o chatbot... Se você sair dessa página, o chatbot custará <span className="font-bold text-destructive">R$99,00</span>.
+          </p>
+          <p className="font-body text-md text-muted-foreground mb-4">
+            De <span className="line-through">R$99</span> você vai investir somente...
+          </p>
+          <div className="mb-8">
+            <span className="text-2xl text-muted-foreground line-through mr-2">De R$99,00</span>
+            <span className="font-headline text-7xl sm:text-8xl font-extrabold text-primary">
+              R$49<span className="text-5xl sm:text-6xl align-top">,00</span>
+            </span>
+          </div>
+        </div>
+        {/* End of Features and Pricing Section */}
         
-        <CountdownTimer />
+        <CountdownTimer initialHours={0} initialMinutes={4} initialSeconds={0} />
 
         <Button size="lg" className="text-lg px-10 py-6 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform transition-transform hover:scale-105">
           <ZapIcon className="h-6 w-6 mr-2" />

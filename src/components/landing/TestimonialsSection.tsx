@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: 'Ana Silva',
     company: 'Dona da Loja Flor de Lis',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/03.jpeg',
     aiHint: 'woman portrait',
     stars: 5,
     quote: 'O ChatVital revolucionou meu atendimento! Consigo responder meus clientes na hora e as vendas aumentaram 30% desde que comecei a usar. E o melhor: sem mensalidade!',
@@ -15,7 +15,7 @@ const testimonials = [
   {
     name: 'Carlos Pereira',
     company: 'Consultor de Vendas Online',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/01.jpg',
     aiHint: 'man portrait',
     stars: 5,
     quote: 'Eu estava cético no início, mas o ChatVital superou minhas expectativas. A IA é inteligente e a plataforma é muito fácil de usar. Recomendo para todos que querem automatizar o WhatsApp.',
@@ -23,7 +23,7 @@ const testimonials = [
   {
     name: 'Mariana Costa',
     company: 'Empreendedora Digital',
-    avatar: 'https://placehold.co/100x100.png',
+    avatar: 'https://seguro.chatbotvital.com/wp-content/uploads/2025/06/04.jpeg',
     aiHint: 'woman smiling',
     stars: 5,
     quote: 'Finalmente uma solução de chatbot que não pesa no bolso! O acesso vitalício por um preço justo é incrível. O suporte também é muito atencioso. Estou muito satisfeita!',

@@ -9,7 +9,7 @@ export function GuaranteeSection() {
           {/* Left Column: Image */}
           <div className="w-full md:w-auto flex justify-center md:justify-start">
             <Image
-              src="https://placehold.co/200x200.png"
+              src="https://seguro.chatbotvital.com/wp-content/uploads/2025/06/selo-garantia.png"
               alt="Selo de Garantia ChatVital - 15 dias"
               width={180}
               height={180}
