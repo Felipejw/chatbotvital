@@ -27,6 +27,30 @@ const faqs = [
     question: 'Preciso pagar mais depois?',
     answer: 'Não. A nossa oferta especial de R$49 garante acesso vitalício à plataforma, sem nenhuma mensalidade ou taxa adicional futura.',
   },
+  {
+    question: 'O Chatbot possui Mensalidade?',
+    answer: 'Não! Você paga apenas 1 única vez e o sistema é seu para sempre.',
+  },
+  {
+    question: 'Como vou receber o acesso ao Chatbot?',
+    answer: 'Após a confirmação do pagamento você receberá em seu Email o acesso para começar a usar.',
+  },
+  {
+    question: 'Quais são as formas de pagamento?',
+    answer: 'Você pode comprar seu Chatbot com Pix ou Cartão de Crédito em até 12x.',
+  },
+  {
+    question: 'Preciso estar com o Computador ou WhatsApp ligado?',
+    answer: 'Você pode estar com o celular, computador e WhatsApp desligados que irá funcionar perfeitamente.',
+  },
+  {
+    question: 'Eu terei algum suporte sobre o Chatbot?',
+    answer: 'Sim, após a compra você contará com nosso suporte no WhatsApp e vídeos para fazer a configuração do seu chatbot.',
+  },
+  {
+    question: 'Posso revender o Chatbot?',
+    answer: 'Sim, você pode revender nosso chatbot livremente.',
+  },
 ];
 
 export function FaqSection() {
