@@ -8,20 +8,8 @@ import { HelpCircleIcon } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Preciso instalar algo?',
-    answer: 'Não! Tudo funciona direto no navegador. Sem complicações, acesse de onde estiver.',
-  },
-  {
     question: 'Posso usar em vários dispositivos?',
     answer: 'Sim. Você pode acessar pelo celular, tablet ou computador. Sua conta é sincronizada em todos eles.',
-  },
-  {
-    question: 'Tem teste grátis?',
-    answer: 'Sim! Oferecemos um período de teste gratuito de 3 dias para você explorar todas as funcionalidades da plataforma sem compromisso.',
-  },
-  {
-    question: 'É seguro?',
-    answer: 'Com certeza! Utilizamos as mais recentes tecnologias de segurança para proteger seus dados e conversas. Além disso, nosso suporte via WhatsApp está sempre pronto para ajudar.',
   },
   {
     question: 'Preciso pagar mais depois?',
