@@ -134,6 +134,6 @@ body {
     animation-play-state: paused;
   }
   .animate-pulse-whatsapp {
-    animation: pulse-whatsapp 2s infinite;
+    animation: pulse-whatsapp 1.5s infinite;
   }
 }
